@@ -207,9 +207,32 @@ The missingness of `avg_rating` **DOES depend** on the number of steps. Recipes 
 
 The missingness also depends on calorie content, with unrated recipes having slightly higher calories on average.
 
+**Test 4: Does missingness depend on `sodium_pdv`?**
+
+<iframe
+  src="assets/missingness-sodium.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+**Result:** p-value = 0.881 (not significant)
+
+The missingness of `avg_rating` **DOES NOT depend** on sodium content. Recipes with missing ratings have similar sodium levels (mean of 28.6% DV) compared to recipes with ratings (mean of 29.0% DV). The difference of 0.35% DV is negligible and not statistically significant (p = 0.881 > 0.05).
+
+This suggests that sodium content does not influence whether users decide to rate a recipe, unlike preparation time and complexity which do show dependency.
+
 ### Conclusion
 
-The missingness of `avg_rating` is **MAR (Missing At Random)** conditional on observable features like preparation time, recipe complexity, and calorie content. This suggests that longer, more complex, higher-calorie recipes are systematically less likely to receive ratings, possibly because users find them intimidating or time-consuming.
+The missingness of `avg_rating` is **MAR (Missing At Random)** conditional on observable features like preparation time, recipe complexity, and calorie content. However, the missingness is **independent** of sodium content, indicating that not all nutritional factors influence rating behavior.
+
+**Key Findings:**
+- **Dependent on:** Preparation time (p < 0.001), recipe complexity/steps (p < 0.001), and calorie content (p < 0.001)
+- **Independent of:** Sodium content (p = 0.881)
+
+This pattern suggests that **structural and convenience factors** (how long a recipe takes, how complicated it is) significantly influence whether users try and rate recipes. Higher-calorie recipes may also be attempted less frequently, leading to fewer ratings. However, **specific nutritional details like sodium** do not affect rating behavior, indicating users are more concerned with practical considerations than detailed nutritional profiles when deciding which recipes to engage with.
+
+The selective dependency confirms MAR status: missingness can be explained by observed variables (time, complexity, calories) rather than the unobserved rating value itself. This has important implications for analysis, as we can account for missingness bias by controlling for these structural recipe characteristics.
 
 ---
 
