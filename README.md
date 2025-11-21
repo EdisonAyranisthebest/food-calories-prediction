@@ -543,7 +543,7 @@ At the 5% significance level, we have strong evidence that the model performs si
 
 ## Conclusion
 
-This analysis revealed that **nutritional content has little relationship with recipe ratings** on Food.com. Users rate recipes based on taste and satisfaction rather than health metrics. Our predictive model for calories achieved modest performance (577 RMSE), limited by the absence of ingredient quantities. Most significantly, the model exhibited **substantial unfairness**, performing twice as poorly on desserts—a critical limitation for any practical deployment.
+This analysis revealed that **nutritional content has little relationship with recipe ratings** on Food.com. Users rate recipes based on taste and satisfaction rather than health metrics. Our predictive model for calories achieved modest performance (577 RMSE), limited by the absence of ingredient quantities. Most significantly, the model exhibited **substantial unfairness**, performing twice as poorly on desserts.
 
 **Key Takeaways:**
 1. Protein content doesn't affect ratings (hypothesis test: p = 1.0)
