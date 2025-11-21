@@ -549,6 +549,6 @@ This analysis revealed that **nutritional content has little relationship with r
 1. Protein content doesn't affect ratings (hypothesis test: p = 1.0)
 2. Simple features poorly predict calories (need ingredient amounts)
 3. Feature engineering helps, but can't overcome data limitations
-4. Model fairness analysis is crucial—revealed severe dessert prediction bias
+4. Model fairness analysis is crucial as it revealed severe dessert prediction bias
 
 **GitHub Repository:** (https://github.com/EdisonAyranisthebest/food-calories-prediction)
