@@ -1,6 +1,6 @@
 # Calorie Prediction Using Recipe Features
 
-**Author:** Eddie Ayran
+**Author:** Edison Ayran
 
 **Course:** DSC 80 at UC San Diego
 
