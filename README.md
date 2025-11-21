@@ -502,7 +502,7 @@ Does our model predict calories equally well for **dessert recipes** vs. **non-d
 
 ### Conclusion
 
-⚠️ **The model is UNFAIR.**
+**The model is UNFAIR.**
 
 At the 5% significance level, we have strong evidence that the model performs significantly worse for dessert recipes. The model's error for desserts is **more than double** that of non-desserts (108% higher).
 
