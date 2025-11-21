@@ -551,4 +551,4 @@ This analysis revealed that **nutritional content has little relationship with r
 3. Feature engineering helps, but can't overcome data limitations
 4. Model fairness analysis is crucial—revealed severe dessert prediction bias
 
-**GitHub Repository:** [Link to your repo]
+**GitHub Repository:** (https://github.com/EdisonAyranisthebest/food-calories-prediction)
